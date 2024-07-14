@@ -1,0 +1,9 @@
+.card-modal {
+  background-color: white;
+}
+.brewery-card.card-modal:hover {
+  transform: none;
+}
+.card-modal img {
+  width: 400px;
+}

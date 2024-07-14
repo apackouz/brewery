@@ -1,0 +1,22 @@
+.pagination-footer {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.page-of {
+  color: white;
+  margin-left: 10px;
+}
+.page-input,
+.page-of {
+  margin-right: 10px;
+}

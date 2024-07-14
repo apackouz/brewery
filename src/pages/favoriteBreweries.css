@@ -1,0 +1,16 @@
+.no-favorites {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.confirm-remove-all {
+  background-color: #ccc;
+  padding: 20px;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  border-radius: 10px;
+}
+
+.btn-remove {
+  margin-right: 15px;
+}

@@ -1,0 +1,32 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-thickness: 2px;
+}
+
+.nav-component {
+  background-color: #333;
+  padding: 20px;
+}
+
+.nav-component ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-component ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-btn {
+  margin: 0 10px;
+}

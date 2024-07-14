@@ -1,0 +1,140 @@
+.brewery-card {
+  display: flex;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 1);
+  padding: 1rem;
+  border-radius: 8%;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brewery-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.card-info {
+  position: relative;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+.brewery-card p {
+  width: 100%;
+}
+
+.brewery-card img {
+  width: 200px;
+  object-fit: contain;
+  border-radius: 8%;
+  align-self: flex-end;
+  animation: shake 0.5s ease-in-out;
+}
+.brewery-name {
+  width: 100%;
+}
+.brewery-card .BeerMugSvg:hover {
+  transform: scale(1.1);
+}
+.brewery-card .BeerMugSvg {
+  align-self: flex-start;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 8px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+}
+.brewery-card .BeerMugSvg.favorite {
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.brewery-type {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.brewery-type.micro {
+  text-decoration-color: rgb(167, 76, 76);
+}
+
+.brewery-type.nano {
+  text-decoration-color: blue;
+}
+
+.brewery-type.regional {
+  text-decoration-color: green;
+}
+
+.brewery-type.brewpub {
+  text-decoration-color: purple;
+}
+
+.brewery-type.large {
+  text-decoration-color: orange;
+}
+
+.brewery-type.planning {
+  text-decoration-color: pink;
+}
+
+.brewery-type.bar {
+  text-decoration-color: brown;
+}
+
+.brewery-type.contract {
+  text-decoration-color: teal;
+}
+
+.brewery-type.proprietor {
+  text-decoration-color: violet;
+}
+
+.brewery-type.closed {
+  text-decoration-color: gray;
+}
+.arrow.isFavorite {
+  display: none;
+}
+.arrow:not(.isFavorite) {
+  position: absolute;
+  right: -100%;
+  transform: scale(3);
+  color: #fac546;
+  animation: arrowMove 1.2s ease-in-out forwards;
+}
+
+@keyframes arrowMove {
+  0% {
+    right: -80%;
+    opacity: 0;
+  }
+  50% {
+    right: 0%;
+    opacity: 1;
+  }
+  90% {
+    right: 40%;
+    opacity: 1;
+  }
+  100% {
+    right: 60%;
+    opacity: 0;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20%,
+  60% {
+    transform: rotate(-2deg);
+  }
+  40%,
+  80% {
+    transform: rotate(2deg);
+  }
+}
